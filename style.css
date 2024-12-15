@@ -293,3 +293,7 @@ backdrop-filter: blur(5px);
 .virtual-assistant img{
     cursor: pointer;
 }
+.virtual-assistant img:hover{
+    transform: scale(1.2); /* Example effect: scale up the image */
+    transition: transform 0.5s ease;
+}
