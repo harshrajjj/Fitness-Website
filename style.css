@@ -7,7 +7,7 @@
 body{
     width: 100%;
     height: 100vh;
-    background-image: url("bg.jpg");
+    background-image: url("https://wallpapers.com/images/high/fitness-background-dgu6psq4gtglkhvm.webp");
     background-size: 100% 100%;
     overflow-x: hidden;
     background-repeat: no-repeat;
@@ -25,10 +25,36 @@ nav{
     position: relative;
     z-index: 20;
 }
-.logo{
+.logo {
+    /* Basic styling */
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(45deg, #d3d3d3, #a9a9a9);
+    border-radius: 25%;
+    font-size: 24px;
+    font-weight: bold;
     color: white;
-    font-size: 40px;
-}
+    text-align: center;
+    line-height: 150px;
+  
+    /* Animation properties */
+    animation: glow 2s infinite ease-in-out;
+  }
+  
+  /* Keyframes for glowing effect */
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 10px #a9a9a9;
+    }
+    50% {
+      box-shadow: 0 0 20px #d3d3d3, 0 0 30px #a9a9a9;
+    }
+    100% {
+      box-shadow: 0 0 10px #a9a9a9;
+    }
+  }
+  
 .select-box{
     width: 200px;
     position: absolute;
@@ -134,7 +160,7 @@ z-index: 25;
 .prompt{
     width: 60%;
     padding: 10px;
-    background: black;
+    background: black; 
     color: white;
     font-size: 19px;
     border-radius: 20px;
@@ -177,10 +203,20 @@ color:white
     color: black;
 }
 .bgtext{
-    font-size: 10vw;
+    font-size: 8vw;
     text-align: center;
-    color: rgba(240, 248, 255, 0.482);
+    /* color: white; */
+    background-image: linear-gradient(
+        to left, #b29774, #494041, #8f5674
+    );
+    background-clip: text;
+    color: transparent ;
     
+}
+.bgtext{
+    background-image: linear-gradient(
+        to right, #b29774, #494041, #8f5674
+    );
 }
 .svgs{
 width: 50%;
