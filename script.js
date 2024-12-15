@@ -124,6 +124,7 @@ recognition.onresult=(event)=>{
     content.innerText=transcript
    takeCommand(transcript.toLowerCase())
    console.log(event)
+   content.innerText="speak Now";
   
 }
 
