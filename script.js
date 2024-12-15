@@ -158,7 +158,7 @@ else if(message.includes("biceps")|| message.includes("triceps")){
 }else if(message.includes("hello")||message.includes("hey")){
   speak("hello sir,what can i help you?")
 }
-else if(message.includes("who are you")){
+else if(message.includes("yourself")){
   speak("i am virtual assistant ,created by Prince and Harsh Sir")
 }else if(message.includes("open youtube")){
   speak("opening youtube...")
