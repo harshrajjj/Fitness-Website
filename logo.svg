@@ -1,20 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="200" height="50" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+    <!-- Definitions for Subtle and Dimmed Glow Effect -->
+    <defs>
+        <filter id="dimmedGlow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
     <!-- Dumbbell -->
-    <g transform="translate(10, 15)" fill="#555555">
-        <rect x="0" y="8" width="20" height="4" rx="2"/>
-        <rect x="40" y="8" width="20" height="4" rx="2"/>
-        <circle cx="25" cy="10" r="5"/>
-        <circle cx="35" cy="10" r="5"/>
+    <g transform="translate(10, 15)" fill="#555555" filter="url(#dimmedGlow)">
+        <rect x="0" y="8" width="20" height="4" rx="2" />
+        <rect x="40" y="8" width="20" height="4" rx="2" />
+        <circle cx="25" cy="10" r="5" />
+        <circle cx="35" cy="10" r="5" />
     </g>
+
     <!-- AI Text -->
-    <text x="70" y="33" font-family="Arial" font-weight="bold" font-size="24" fill="#ffffff">
+    <text x="70" y="33" font-family="Arial" font-weight="bold" font-size="24" fill="#ffffff" filter="url(#dimmedGlow)">
         <tspan fill="#555555">AI</tspan>FIT
     </text>
+
     <!-- Circuit Pattern -->
-    <g stroke="#555555" stroke-width="1" fill="none">
+    <g stroke="#555555" stroke-width="1" fill="none" filter="url(#dimmedGlow)">
         <path d="M160,15 L180,15 L180,35 L160,35" />
-        <circle cx="165" cy="25" r="2" fill="#555555"/>
-        <circle cx="175" cy="25" r="2" fill="#555555"/>
+        <circle cx="165" cy="25" r="2" fill="#555555" />
+        <circle cx="175" cy="25" r="2" fill="#555555" />
     </g>
 </svg>
