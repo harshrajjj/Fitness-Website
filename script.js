@@ -159,7 +159,7 @@ else if(message.includes("biceps")|| message.includes("triceps")){
   speak("hello sir,what can i help you?")
 }
 else if(message.includes("yourself")){
-  speak("i am virtual assistant ,created by Prince and Harsh Sir")
+  speak("i am virtual assistant ,created by Prince and Hursh Sir")
 }else if(message.includes("open youtube")){
   speak("opening youtube...")
   window.open("https://youtube.com/","_blank")
@@ -168,9 +168,9 @@ else if(message.includes("open google")){
   speak("opening google...")
   window.open("https://google.com/","_blank")
 }
-else if(message.includes("open facebook")){
-  speak("opening facebook...")
-  window.open("https://facebook.com/","_blank")
+else if(message.includes("open spotify")){
+  speak("opening spotify...")
+  window.open("https://open.spotify.com/","_blank")
 }
 else if(message.includes("open instagram")){
   speak("opening instagram...")
