@@ -40,7 +40,7 @@ if(chatbox.classList.contains("active-chat-box")){
 
 
 
- let Api_url= "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyAA_8dexVvPaVQcQajnFB76Q_djzkmGewU"
+ let Api_url= "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=?"
 
 async function generateApiResponse(aiChatBox){
     const textElement=aiChatBox.querySelector(".text")
